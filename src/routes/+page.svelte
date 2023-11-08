@@ -10,5 +10,5 @@
 
 <!--for each loop-->
 {#each playerArr as player}
-<p>{player.player}, {player.team}, {player.position}</p>
+<p class="p-4 text-center">{player.player}, {player.team}, {player.position}</p>
 {/each}
