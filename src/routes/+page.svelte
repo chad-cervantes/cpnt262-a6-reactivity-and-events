@@ -1,2 +1,14 @@
-<h1>Welcome to SvelteKit</h1>
-<p>Visit <a href="https://kit.svelte.dev">kit.svelte.dev</a> to read the documentation</p>
+<script>
+  //Object Array
+  let playerArr = [
+    {player: 'Mohamed Salah', team: 'Liverpool FC', position: 'right winger'},
+    {player: 'Virgil Van Dijk', team: 'Liverpool FC', position: 'centre back'},
+    {player: 'Alexis Mac Allister', team: 'Liverpool FC', position: 'midfielder'},
+    {player: 'Allison Becker', team: 'Liverpool FC', position: 'goalie'},
+  ];
+</script>
+
+<!--for each loop-->
+{#each playerArr as player}
+<p>{player.player}, {player.team}, {player.position}</p>
+{/each}
