@@ -6,7 +6,10 @@
     {name: 'Allison Becker', team: 'Liverpool FC', position: 'goalie'},
   ];
   
+  //Components importation
   import EventDispatcher from '../lib/components/EventDispatcher.svelte';
+
+  import DarkMode from '../lib/components/DarkMode.svelte';
   
   //Variables for adding new variables
   let newName = '';
@@ -27,6 +30,25 @@
     playerArr = [...playerArr, addPlayer];
   }
 </script>
+
+<h1>List of soccer players in Europe</h1>
+
+<!--Dark Mode callback-->
+<DarkMode />
+
+<!--Manipulation of CSS through dark.light mode toggle-->
+<style>
+  :global(body) {
+    background-color: white;
+    color: black;
+    transition: 0.5s;
+  }
+
+  :global(body.dark-side) {
+   background-color: darkcyan;
+   color: white;
+  }
+</style>
 
 <!--Input field-->
 <!--Add Name-->
