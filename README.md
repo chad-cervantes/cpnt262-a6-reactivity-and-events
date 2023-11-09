@@ -6,6 +6,9 @@
 
 ### Attributions 
 
+Svelte Dark Mode Toggle
+- [Dark Mode Toggle - svelte repl](https://svelte.dev/repl/ed4fef4beceb4b0eb295d1f9fdf3bd62?version=3.6.9)
+
 Classmates & Instructors
 - Ashkie
 - Brendan 
