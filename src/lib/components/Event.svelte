@@ -1,13 +1,14 @@
 <script>
   import { createEventDispatcher } from 'svelte';
 
-  export const dispatch = createEventDispatcher();
+  const dispatch = createEventDispatcher();
   
-  function message() {
-    alert('Added player');
+  function defaultFn() {
+      dispatch('button', {});
   }
 
 </script>
 
-<!--Event Dispatch button-->
-<button on:click={message}>Add Player</button>
+
+<!--Button to add a new player-->
+<button on:click={defaultFn} class="m-auto rounded-md bg-blue-500 px-4 py-2 mx-4 text-white transition ease-linear duration-150 hover:bg-blue-700 active:bg-blue-900">Click To Add Values</button>
