@@ -50,9 +50,9 @@
 <EventDispatcher on:button={update}/>
 
 <!--for each loop for playerArr-->
-<section class="grid grid-cols-5">
+<section class="m-auto p-4 grid grid-cols-6">
   {#each playerArr as {name, team, position}}
-  <ul>
+  <ul class="pb-4">
     <li>{name}</li>
     <li>{team}</li>
     <li>{position}</li>
