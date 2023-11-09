@@ -1,5 +1,5 @@
 <script>
- //Object Array
+ //orginal Player Array
   let playerArr = [
     {name: 'Mohamed Salah', team: 'Liverpool FC', position: 'right winger'},
     {name: 'Andy Robertson', team: 'Liverpool FC', position: 'left back'},
@@ -11,7 +11,7 @@
 
   import DarkMode from '../lib/components/DarkMode.svelte';
   
-  //Variables for adding new variables
+  //Variables for adding new players
   let newName = '';
   let newTeam = '';
   let newPosition = '';
@@ -31,7 +31,7 @@
   }
 </script>
 
-<h1>List of soccer players in Europe</h1>
+<h1 class="text-center text-5xl bg-pink-400 p-4">Add a list of soccer players from Europe</h1>
 
 <!--Dark Mode callback-->
 <DarkMode />
@@ -69,6 +69,7 @@
   <input bind:value={newPosition} type="text" id="add-player" class="block m-auto w-[150px] rounded-lg border-4 border-black p-2 placeholder:text-slate-400  sm:text-sm sm:leading-6" placeholder="Position">
 </section>
 
+<!--EventDispatcher callback for button to add new players-->
 <EventDispatcher on:button={update}/>
 
 <!--for each loop for playerArr-->
