@@ -1,5 +1,5 @@
 <script>
- //orginal Player Array
+ //Original Player Array
   let playerArr = [
     {name: 'Mohamed Salah', team: 'Liverpool FC', position: 'right winger'},
     {name: 'Andy Robertson', team: 'Liverpool FC', position: 'left back'},
