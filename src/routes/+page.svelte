@@ -6,7 +6,7 @@
     {name: 'Allison Becker', team: 'Liverpool FC', position: 'goalie'},
   ];
   
-  import Event from '../lib/components/Event.svelte';
+  import EventDispatcher from '../lib/components/EventDispatcher.svelte';
   
   //Variables for adding new variables
   let newName = '';
@@ -51,16 +51,14 @@
   <input bind:value={newTeam} type="text" id="add-player" class="block m-auto w-[150px] rounded-lg border-4 border-black p-2 placeholder:text-slate-400  sm:text-sm sm:leading-6" placeholder="Team">
 </section>
 
+<!--Add Position-->
 <section class="p-4 text-center">
   <label for="add-player">Add Position</label>
   <input bind:value={newPosition} type="text" id="add-player" class="block m-auto w-[150px] rounded-lg border-4 border-black p-2 placeholder:text-slate-400  sm:text-sm sm:leading-6" placeholder="Position">
 </section>
 
-<!--if/else state from <Event />-->
 
-
-
-<Event on:button={update}/>
+<EventDispatcher on:button={update}/>
 
 
 
