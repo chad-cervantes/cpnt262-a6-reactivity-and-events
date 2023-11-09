@@ -3,25 +3,28 @@
   let playerArr = [
     {name: 'Mohamed Salah', team: 'Liverpool FC', position: 'right winger'},
     {name: 'Andy Robertson', team: 'Liverpool FC', position: 'left back'},
-    {name: 'Allison', team: 'Liverpool FC', position: 'goalie'},
+    {name: 'Allison Becker', team: 'Liverpool FC', position: 'goalie'},
   ];
-
-  console.log(playerArr);
   
   import Event from '../lib/components/Event.svelte';
   
-  let newName = {name: ''};
-  let newTeam = {team: ''};
-  let newPosition = {position: ''};
+  //Variables for adding new variables
+  let newName = '';
+  let newTeam = '';
+  let newPosition = '';
   
+  //Function to add new players
   function update() {
-    // playerArr.name = '';
-    // playerArr.team = '',
-    // playerArr.position = '';
-    newName.name = '';
-    newTeam.team = '';
-    newPosition.position = '';
+    
+    //new array for adding new players
+    const addPlayer = {
+    name: newName,
+    team: newTeam,
+    position: newPosition,
+    };
 
+    //spread operator
+    playerArr = [...playerArr, addPlayer];
   }
 
 
