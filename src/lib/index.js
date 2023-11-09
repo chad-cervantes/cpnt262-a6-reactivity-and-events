@@ -6,11 +6,8 @@
     {name: 'Allison Becker', team: 'Liverpool FC', position: 'goalie'},
   ];
 
-  export let newPlayerArr = {name:'', team:'', position:''};
-
-  //Add player function
-  export function addPlayer() {
-    newPlayerArr = playerArr;
-  }
-  console.log(addPlayer);
+  export let newPlayer = '';
+  export let newPlayerName = '';
+  export let newPlayerTeam = '';
+  export let newPlayerPosition = '';
 
