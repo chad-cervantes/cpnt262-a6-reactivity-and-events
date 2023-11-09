@@ -26,17 +26,7 @@
     //spread operator
     playerArr = [...playerArr, addPlayer];
   }
-
-
 </script>
-
-<!--for each loop for playerArr-->
-<!-- <section class="grid grid-cols-2"> -->
-  {#each playerArr as {name, team, position}}
-    <p>{name} is a soccer player from {team}, and his position is {position}</p>
-  {/each}
-<!-- </section> -->
-
 
 <!--Input field-->
 <!--Add Name-->
@@ -57,8 +47,24 @@
   <input bind:value={newPosition} type="text" id="add-player" class="block m-auto w-[150px] rounded-lg border-4 border-black p-2 placeholder:text-slate-400  sm:text-sm sm:leading-6" placeholder="Position">
 </section>
 
-
 <EventDispatcher on:button={update}/>
+
+<!--for each loop for playerArr-->
+<section class="grid grid-cols-5">
+  {#each playerArr as {name, team, position}}
+  <ul>
+    <li>{name}</li>
+    <li>{team}</li>
+    <li>{position}</li>
+  </ul>
+    <!-- <p> {name} is a soccer player from {team}, and his position is {position}</p> -->
+  {/each}
+</section>
+
+
+
+
+
 
 
 
