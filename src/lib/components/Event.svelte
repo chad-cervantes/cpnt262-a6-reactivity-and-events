@@ -3,8 +3,8 @@
 
   export const dispatch = createEventDispatcher();
   
-  export const message = () => {
-    dispatch('soccerMessage', {message: 'Added player'});
+  function message() {
+    alert('Added player');
   }
 
 </script>
