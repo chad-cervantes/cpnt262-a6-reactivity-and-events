@@ -6,7 +6,7 @@
 </script>
 
 <!--button for dark mode toggle-->
-<button on:click={darkModeButton} class="bg-rose-300 text-white rounded-md px-8 py-4 mx-5 transition ease-linear duration-150">
+<button on:click={darkModeButton} class="bg-rose-400 text-white rounded-md px-8 py-4 mx-5 transition ease-linear duration-150">
   Click for light/dark mode <slot />
 </button>
 
