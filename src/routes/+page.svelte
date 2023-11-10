@@ -54,19 +54,19 @@
 <!--Add Name-->
 <section class="p-4 text-center">
   <label for="add-player">Add Name</label>
-  <input bind:value={newName} type="text" id="add-player"  class="block m-auto w-[150px] rounded-lg border-4 border-black p-2 placeholder:text-slate-400  sm:text-sm sm:leading-6" placeholder="Name">
+  <input bind:value={newName} type="text" id="add-player"  class="block m-auto w-[150px] rounded-lg border-4 border-black p-2 placeholder:text-slate-200  sm:text-sm sm:leading-6 bg-teal-300" placeholder="Name">
 </section>
 
 <!--Add Team-->
 <section class="p-4 text-center">
   <label for="add-player">Add Team</label>
-  <input bind:value={newTeam} type="text" id="add-player" class="block m-auto w-[150px] rounded-lg border-4 border-black p-2 placeholder:text-slate-400  sm:text-sm sm:leading-6" placeholder="Team">
+  <input bind:value={newTeam} type="text" id="add-player" class="block m-auto w-[150px] rounded-lg border-4 border-black p-2 placeholder:text-slate-200  sm:text-sm sm:leading-6 bg-teal-300" placeholder="Team">
 </section>
 
 <!--Add Position-->
 <section class="p-4 text-center">
   <label for="add-player">Add Position</label>
-  <input bind:value={newPosition} type="text" id="add-player" class="block m-auto w-[150px] rounded-lg border-4 border-black p-2 placeholder:text-slate-400  sm:text-sm sm:leading-6" placeholder="Position">
+  <input bind:value={newPosition} type="text" id="add-player" class="block m-auto w-[150px] rounded-lg border-4 border-black p-2 placeholder:text-slate-200  sm:text-sm sm:leading-6 bg-teal-300" placeholder="Position">
 </section>
 
 <!--EventDispatcher prop for button to add new players-->
