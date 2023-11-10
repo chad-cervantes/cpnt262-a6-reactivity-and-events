@@ -35,12 +35,15 @@
 
  <h1 class="text-center text-5xl bg-pink-400 p-4">Add a list of soccer players from Europe</h1>
 
+ <h2 class="text-center text-2xl bg-indigo-400 p-4">Dark Mode Toggle</h2>
 <!--Dark Mode prop-->
 <DarkMode />
 
+<h2 class="text-center text-2xl bg-indigo-400 p-4">Carousel</h2>
 <!--Carousel for players-->
 <Carousel />
 
+<h2 class="text-center text-2xl bg-indigo-400 p-4">Inputs</h2>
 <!--Manipulation of CSS through dark/light mode toggle-->
 <style>
   :global(body) {
@@ -78,6 +81,7 @@
 <EventDispatcher on:button={update}/>
 
 
+<h2 class="text-center text-2xl bg-indigo-400 p-4">List of Players</h2>
 <!--for each loop for playerArr-->
 <section class="m-auto p-4 grid grid-cols-6">
   {#each playerArr as {name, team, position}}
