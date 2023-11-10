@@ -11,6 +11,8 @@
 
   import DarkMode from '../lib/components/DarkMode.svelte';
 
+  import Carousel from '../lib/components/Carousel.svelte';
+
   //Variables for adding new players
   let newName = '';
   let newTeam = '';
@@ -35,6 +37,9 @@
 
 <!--Dark Mode prop-->
 <DarkMode />
+
+<!--Carousel for players-->
+<Carousel />
 
 <!--Manipulation of CSS through dark/light mode toggle-->
 <style>
@@ -71,6 +76,7 @@
 
 <!--EventDispatcher prop for button to add new players-->
 <EventDispatcher on:button={update}/>
+
 
 <!--for each loop for playerArr-->
 <section class="m-auto p-4 grid grid-cols-6">
