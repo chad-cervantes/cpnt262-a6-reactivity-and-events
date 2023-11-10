@@ -11,8 +11,6 @@
 
   import DarkMode from '../lib/components/DarkMode.svelte';
 
-  import {slide} from 'svelte/transition'
-  
   //Variables for adding new players
   let newName = '';
   let newTeam = '';
