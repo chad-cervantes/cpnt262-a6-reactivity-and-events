@@ -31,6 +31,39 @@
     //spread operator
     playerArr = [...playerArr, addPlayer];
   }
+
+  // current index counter
+let currentSlideIndex = 0;
+
+
+let currentSlideContent = playerArr[0];
+
+
+// the max length of the array
+const maxLength = playerArr.length - 1;
+
+// next function
+function nextSlide() {
+  if (currentSlideIndex === maxLength) {
+    currentSlideIndex = 0;
+    currentSlideContent = playerArr[currentSlideIndex];
+  } else {
+    currentSlideIndex++;
+    currentSlideContent = playerArr[currentSlideIndex];
+  }
+}
+
+
+// previous function
+function prevSlide() {
+  if (currentSlideIndex === 0) {
+    currentSlideIndex = maxLength;
+    currentSlideContent = playerArr[currentSlideIndex]
+  } else {
+    currentSlideIndex--;
+    currentSlideContent = playerArr[currentSlideIndex];
+  }
+}
 </script>
 
  <h1 class="text-center text-5xl bg-pink-400 p-4">Add a list of soccer players from Europe</h1>
@@ -93,6 +126,14 @@
   {/each}
 </section>
 
+<!--Making of carousel slide-->
+<section>
+  <h2>{currentSlideIndex}: {currentSlideContent}</h2>
+  <div>
+    <button on:click={prevSlide} class="rounded-md bg-green-300 px-4 py-2" id="prev-slide">Previous</button>
+    <button on:click={nextSlide} class="rounded-md bg-green-300 px-4 py-2" id="next-slide">Next</button>
+  </div>
+</section>
 
 
 
