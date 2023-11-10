@@ -12,12 +12,6 @@ let currentSlideContent = slideArr[0];
 
 // the max length of the array
 const maxLength = slideArr.length - 1;
-let buttonColors = {
-  main: 'bg-green-500',
-  hover: 'bg-green-700',
-  active: 'bg-green-900'
-}
-
 
 // next function
 function nextSlide() {
@@ -35,12 +29,10 @@ function nextSlide() {
 function prevSlide() {
   if (currentSlideIndex === 0) {
     currentSlideIndex = maxLength;
-    displayCurrentSlide.textContent = slideArr[currentSlide];
-    displayCurrentSlideIndex.textContent = currentSlide;
+    currentSlideContent = slideArr[currentSlideIndex]
   } else {
     currentSlideIndex--;
-    displayCurrentSlide.textContent = slideArr[currentSlide];
-    displayCurrentSlideIndex.textContent = currentSlide;
+    currentSlideContent = slideArr[currentSlideIndex];
   }
 }
 
