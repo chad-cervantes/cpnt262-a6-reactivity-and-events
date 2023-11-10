@@ -10,6 +10,8 @@
   import EventDispatcher from '../lib/components/EventDispatcher.svelte';
 
   import DarkMode from '../lib/components/DarkMode.svelte';
+
+  import {slide} from 'svelte/transition'
   
   //Variables for adding new players
   let newName = '';
@@ -31,12 +33,12 @@
   }
 </script>
 
-<h1 class="text-center text-5xl bg-pink-400 p-4">Add a list of soccer players from Europe</h1>
+ <h1 class="text-center text-5xl bg-pink-400 p-4">Add a list of soccer players from Europe</h1>
 
-<!--Dark Mode callback-->
+<!--Dark Mode prop-->
 <DarkMode />
 
-<!--Manipulation of CSS through dark.light mode toggle-->
+<!--Manipulation of CSS through dark/light mode toggle-->
 <style>
   :global(body) {
     background-color: white;
@@ -69,18 +71,17 @@
   <input bind:value={newPosition} type="text" id="add-player" class="block m-auto w-[150px] rounded-lg border-4 border-black p-2 placeholder:text-slate-400  sm:text-sm sm:leading-6" placeholder="Position">
 </section>
 
-<!--EventDispatcher callback for button to add new players-->
+<!--EventDispatcher prop for button to add new players-->
 <EventDispatcher on:button={update}/>
 
 <!--for each loop for playerArr-->
 <section class="m-auto p-4 grid grid-cols-6">
   {#each playerArr as {name, team, position}}
-  <ul class="pb-4">
-    <li>{name}</li>
-    <li>{team}</li>
-    <li>{position}</li>
-  </ul>
-    <!-- <p> {name} is a soccer player from {team}, and his position is {position}</p> -->
+    <ul class="pb-4">
+      <li>{name}</li>
+      <li>{team}</li>
+      <li>{position}</li>
+    </ul>
   {/each}
 </section>
 
