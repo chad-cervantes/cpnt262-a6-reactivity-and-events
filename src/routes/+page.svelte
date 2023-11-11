@@ -127,11 +127,11 @@ function prevSlide() {
 </section>
 
 <!--Making of carousel slide-->
-<section>
+<section class="text-center">
   <h2>{currentSlideIndex}: {currentSlideContent}</h2>
-  <div>
-    <button on:click={prevSlide} class="rounded-md bg-green-300 px-4 py-2" id="prev-slide">Previous</button>
-    <button on:click={nextSlide} class="rounded-md bg-green-300 px-4 py-2" id="next-slide">Next</button>
+  <div class="flex justify-center p-4 gap-4">
+    <button on:click={prevSlide} class="rounded-md bg-sky-300 px-4 py-2" id="prev-slide">Previous</button>
+    <button on:click={nextSlide} class="rounded-md bg-sky-300 px-4 py-2" id="next-slide">Next</button>
   </div>
 </section>
 
