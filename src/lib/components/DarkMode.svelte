@@ -6,9 +6,11 @@
 </script>
 
 <!--button for dark mode toggle-->
-<button on:click={darkModeButton} class="bg-rose-400 text-white rounded-md px-8 py-4 mx-5 transition ease-linear duration-150">
-  Click for light/dark mode <slot />
-</button>
+<div class="flex justify-center p-4">
+  <button on:click={darkModeButton} class="bg-rose-400 text-white rounded-md px-2 py-2 transition ease-linear duration-150">
+    Light/Dark mode <slot />
+  </button>
+</div>
 
 <style>
   :global(body.dark-side) button {
