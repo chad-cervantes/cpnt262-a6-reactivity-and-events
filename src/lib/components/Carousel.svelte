@@ -1,26 +1,26 @@
 <script>
   // slide array to loop through
-const slideArr = ["Mohammad Salah", "Virgil Van Dijk", "Andy Robertson", "Allison Becker", "Erling Haaland", "Marcus Rashford", "Kylian Mbappe", "Cristiano Ronaldo", "Lionel Messi", "Kevin De Bryne", "Kaoru Mitoma", "Harry Kane", "Heung-Min Son", "Robert Lewandoski", "Latauro Martinez"];
+const soccerPlayerArr = ["Mohamed Salah", "Virgil Van Dijk", "Andy Robertson", "Allison Becker", "Erling Haaland", "Marcus Rashford", "Kylian Mbappe", "Cristiano Ronaldo", "Lionel Messi", "Kevin De Bryne", "Kaoru Mitoma", "Harry Kane", "Heung-Min Son", "Robert Lewandoski", "Latauro Martinez", "Romelu Lukaku", "Darwin Nunez", "Jude Bellingham", "Neymar", "Raheem Sterling", "Vinicius Jr", "Ilkay Gundogan", "Sadio Mane"];
 
 
 // current index counter
 let currentSlideIndex = 0;
 
 
-let currentSlideContent = slideArr[0];
+let currentSlideContent = soccerPlayerArr[0];
 
 
 // the max length of the array
-const maxLength = slideArr.length - 1;
+const maxLength = soccerPlayerArr.length - 1;
 
 // next function
 function nextSlide() {
   if (currentSlideIndex === maxLength) {
     currentSlideIndex = 0;
-    currentSlideContent = slideArr[currentSlideIndex];
+    currentSlideContent = soccerPlayerArr[currentSlideIndex];
   } else {
     currentSlideIndex++;
-    currentSlideContent = slideArr[currentSlideIndex];
+    currentSlideContent = soccerPlayerArr[currentSlideIndex];
   }
 }
 
@@ -29,10 +29,10 @@ function nextSlide() {
 function prevSlide() {
   if (currentSlideIndex === 0) {
     currentSlideIndex = maxLength;
-    currentSlideContent = slideArr[currentSlideIndex]
+    currentSlideContent = soccerPlayerArr[currentSlideIndex]
   } else {
     currentSlideIndex--;
-    currentSlideContent = slideArr[currentSlideIndex];
+    currentSlideContent = soccerPlayerArr[currentSlideIndex];
   }
 }
 
