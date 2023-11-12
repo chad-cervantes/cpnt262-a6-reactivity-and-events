@@ -15,6 +15,6 @@ Classmates & Instructors
 
 ### Live Deployed Link (Netlify)
 
-- cpnt262-a6-reactivity-and-events.netlify.app
+- [cpnt262-a6-reactivity-and-events](https://cpnt262-a6-reactivity-and-events.netlify.app/)
 
 ### Search Notes
