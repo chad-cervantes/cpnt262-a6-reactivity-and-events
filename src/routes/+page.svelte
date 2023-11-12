@@ -32,12 +32,12 @@
     playerArr = [...playerArr, addPlayer];
   }
 
-  // current index counter
+//Carousel for playerArr
+
+// current index counter
 let currentSlideIndex = 0;
 
-
 let currentSlideContent = playerArr[0];
-
 
 // the max length of the array
 const maxLength = playerArr.length - 1;
@@ -52,7 +52,6 @@ function nextSlide() {
     currentSlideContent = playerArr[currentSlideIndex];
   }
 }
-
 
 // previous function
 function prevSlide() {
@@ -69,14 +68,17 @@ function prevSlide() {
  <h1 class="text-center text-5xl bg-pink-400 p-4">Add a list of soccer players from Europe</h1>
 
  <h2 class="text-center text-2xl bg-indigo-400 p-4">Dark Mode Toggle</h2>
-<!--Dark Mode prop-->
+
+ <!--Dark Mode prop-->
 <DarkMode />
 
-<h2 class="text-center text-2xl bg-indigo-400 p-4">Carousel</h2>
+<h2 class="text-center text-2xl bg-indigo-400 p-4">Carousel of players</h2>
+
 <!--Carousel for players-->
 <Carousel />
 
-<h2 class="text-center text-2xl bg-indigo-400 p-4">Inputs</h2>
+<h2 class="text-center text-2xl bg-indigo-400 p-4">Inputs to add new players</h2>
+
 <!--Manipulation of CSS through dark/light mode toggle-->
 <style>
   :global(body) {
@@ -92,6 +94,7 @@ function prevSlide() {
 </style>
 
 <!--Input field-->
+
 <!--Add Name-->
 <section class="p-4 text-center">
   <label for="add-player">Add Name</label>
@@ -113,8 +116,8 @@ function prevSlide() {
 <!--EventDispatcher prop for button to add new players-->
 <EventDispatcher on:button={update}/>
 
-
 <h2 class="text-center text-2xl bg-indigo-400 p-4">List of Players</h2>
+
 <!--for each loop for playerArr-->
 <section class="m-auto p-4 grid grid-cols-6">
   {#each playerArr as {name, team, position}}
@@ -134,8 +137,6 @@ function prevSlide() {
     <button on:click={nextSlide} class="rounded-md bg-sky-300 px-4 py-2" id="next-slide">Next</button>
   </div>
 </section>
-
-
 
 
 
