@@ -18,3 +18,8 @@ Classmates & Instructors
 - [cpnt262-a6-reactivity-and-events](https://cpnt262-a6-reactivity-and-events.netlify.app/)
 
 ### Search Notes
+
+I was trying to figure out how I would render my inputs in order to add a new player. 
+
+1. 'svelte' 'update object array' - [https://svelte.dev/repl/7410e50ba1974238b8aaf0a6c38836b7?version=3.44.1]
+  - Useful words: 'svelte' 'update object array'
