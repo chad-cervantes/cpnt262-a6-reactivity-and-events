@@ -72,7 +72,7 @@ function prevSlide() {
  <!--Dark Mode prop-->
 <DarkMode />
 
-<h2 class="text-center text-2xl bg-indigo-400 p-4">Carousel of players</h2>
+<h2 class="text-center text-2xl bg-indigo-400 p-4 mb-4">Carousel of players</h2>
 
 <!--Carousel for players-->
 <Carousel />
