@@ -13,6 +13,11 @@ Classmates & Instructors
 - Ashkie
 - Brendan 
 
+### NPM installations
+
+- [Sveltekit](https://svelte.dev/docs/introduction)
+- [Tailwind CSS with Sveltekit](https://tailwindcss.com/docs/guides/sveltekit)
+
 ### Live Deployed Link (Netlify)
 
 - [cpnt262-a6-reactivity-and-events](https://cpnt262-a6-reactivity-and-events.netlify.app/)
