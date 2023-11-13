@@ -65,7 +65,7 @@ function prevSlide() {
 }
 </script>
 
- <h1 class="text-center text-5xl bg-pink-400 p-4">Add a list of soccer players from Europe</h1>
+ <h1 class="text-center text-5xl bg-pink-400 p-4">Add a list of soccer players who play in Europe</h1>
 
  <h2 class="text-center text-2xl bg-indigo-400 p-4">Dark Mode Toggle</h2>
 
