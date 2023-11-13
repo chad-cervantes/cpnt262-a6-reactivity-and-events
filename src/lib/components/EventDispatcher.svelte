@@ -3,6 +3,7 @@
 
   const dispatch = createEventDispatcher();
   
+  //function for EventDispatcher
   function defaultFn() {
       dispatch('button', {});
   }
